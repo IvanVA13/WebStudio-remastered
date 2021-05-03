@@ -1,0 +1,23 @@
+<div class="container">
+    <ul id="portfolio" class="portfolio">
+        {{#each data.portfolio-works}}
+        <li class="portfolio__item">
+            <a href={{link}} class="portfolio__link">
+                <div class="portfolio__container">
+                    <picture>
+                        {{#each pic-source}}
+                        <source srcset={{desctop}} media="(min-width: 1200px)">
+                        <source srcset={{tablet}} media="(min-width: 768px)">
+                        <source srcset={{mobile}} media="(max-width: 767px)">
+                        {{/each}}
+                        <img class="image" src={{image}} alt={{name}} width="450" />
+                    </picture>
+                    <p class="portfolio__description">{{desc}}</p>
+                </div>
+                <h2 class="title portfolio__title">{{name}}</h2>
+                <p class="portfolio__type-work">{{type}}</p>
+            </a>
+        </li>
+        {{/each}}
+    </ul>
+</div>

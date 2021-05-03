@@ -1,0 +1,12 @@
+<ul class="contacts">
+    {{#each data.contacts}}
+    <li class="contacts__item contacts__item--margin">
+        <a class="contacts__link" href={{link}} rel="noopener noreferer">
+            <svg class="contacts__icon" width={{width}} height={{height}}>
+                <use href={{image}}></use>
+            </svg>
+            {{text}}
+        </a>
+    </li>
+    {{/each}}
+</ul>

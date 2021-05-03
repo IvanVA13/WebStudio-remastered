@@ -1,0 +1,11 @@
+<ul class="socials">
+    {{#each this}}
+    <li class="socials__item">
+        <a class="socials__link" href={{this}} target="_blank" rel="noopener noreferer">
+            <svg class="socials__icon">
+                <use href={{#with (lookup @root.data.soc-icons @index)~}} {{this}} {{/with}}></use>
+            </svg>
+        </a>
+    </li>
+    {{/each}}
+</ul>

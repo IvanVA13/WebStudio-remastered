@@ -1,0 +1,33 @@
+<div class="backdrop backdrop--is-hidden" data-modal>
+    <div class="modal">
+        <button class="modal__button-close" data-modal-close type="button">
+            <svg class="modal__icon-close" width="11" height="11">
+                <use href={{data.other.modal-close}}></use>
+            </svg>
+        </button>
+        <form class="form">
+            <b class="modal__title">Оставьте свои данные, мы вам перезвоним</b>
+            {{#each data.modal}}
+            <label class="form__field">
+                <span class="form__label">{{label}}</span>
+                <input class="form__input" type={{type}} name={{name}}>
+                <svg class="form__input-icon">
+                    <use href={{icon}}></use>
+                </svg>
+            </label>
+            {{/each}}
+            <label class="form__field form__field--margin">
+                <span class="form__label">Комментарий</span>
+                <textarea class="form__textarea" name="coment" rows="10" placeholder="Введите текст"></textarea>
+            </label>
+            <label class="form__terms-field">
+                <input class="form__checkbox" type="checkbox" name="terms">
+                <span class="form__custom-checkbox"></span>
+                <span class="form__terms-label">Соглашаюсь с рассылкой и принимаю <a class="form__terms-link"
+                        href="">Условия
+                        договора</a></span>
+            </label>
+            <button class="button form__button" type="submit">Отправить</button>
+        </form>
+    </div>
+</div>

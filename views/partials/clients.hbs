@@ -1,0 +1,14 @@
+<div class="container">
+    <h2 class="section__title">Постоянные клиенты</h2>
+    <ul class="clients">
+        {{#each data.clients}}
+        <li class="clients__item">
+            <a href={{link}} class="clients__link" target="_blank" rel="noopener noreferer">
+                <svg class="clients__icon" width={{width}} height={{height}}>
+                    <use href={{image}}></use>
+                </svg>
+            </a>
+        </li>
+        {{/each}}
+    </ul>
+</div>

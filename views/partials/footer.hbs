@@ -1,0 +1,28 @@
+<footer class="footer">
+    <div class="container footer__container">
+        <ul class="footer__list">
+            <li class="footer__item">
+                {{> logo}}
+                <address class="address">
+                    <p class="address__location">г. Киев, пр-т Леси Украинки, 26</p>
+                    {{> contacts}}
+                </address>
+            </li>
+            <li class="footer__item">
+                <h2 class="title footer__title">присоединяйтесь</h2>
+                {{> socials data.soc-main}}
+            </li>
+            <li class="footer__item">
+                <h2 class="title footer__title">Подпишитесь на рассылку</h2>
+                <form class="form footer__form" action="">
+                    <input class="form__input-alt" type="email" name="user-email" placeholder="E-mail">
+                    <button class="button form__button form__button--footer" type="submit">Подписаться
+                        <svg class="button__icon" width="24" height="24">
+                            <use href={{data.other.send}}></use>
+                        </svg>
+                    </button>
+                </form>
+            </li>
+        </ul>
+    </div>
+</footer>

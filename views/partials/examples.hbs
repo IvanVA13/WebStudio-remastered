@@ -1,0 +1,18 @@
+<div class="container">
+    <h2 class="section__title">Чем мы занимаемся</h2>
+    <ul class="work-examples">
+        {{#each data.examples}}
+        <li class="work-examples__item">
+            <div class="work-examples__container">
+                <picture>
+                    {{#each pic-source}}
+                    <source srcset={{desctop}} media="(min-width: 1200px)">
+                    {{/each}}
+                    <img class="image" src={{image}} alt={{name}} width="370" />
+                </picture>
+                <h3 class="title work-examples__title">{{name}}</h3>
+            </div>
+        </li>
+        {{/each}}
+    </ul>
+</div>

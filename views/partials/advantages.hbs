@@ -1,0 +1,11 @@
+<div class="container">
+    <h2 class="section__title section__title--hidden">Особенности компании</h2>
+    <ul class="advantages">
+        {{#each data.advantages}}
+        <li class="advantages__item">
+            <h3 class="title advantages__title">{{title}}</h3>
+            <p class="advantages__desc">{{desc}}</p>
+        </li>
+        {{/each}}
+    </ul>
+</div>

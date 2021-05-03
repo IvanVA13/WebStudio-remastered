@@ -1,0 +1,12 @@
+<div class="menu-mob">
+    <button class="menu-mob__menu" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+        <svg class="menu-mob__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use class="menu-mob__icon-menu" href={{data.other.menu}}></use>
+            <use class="menu-mob__icon-close" href={{data.other.menu-close}}></use>
+        </svg>
+    </button>
+    <div class="menu-mob__container" id="menu-container" data-menu>
+        {{> site-nav}}
+        {{> contacts}}
+    </div>
+</div>
