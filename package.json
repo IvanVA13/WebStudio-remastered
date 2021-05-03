@@ -1,0 +1,25 @@
+{
+  "name": "test-webp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "serv": "nodemon src/app.js"
+  },
+  "keywords": [],
+  "author": "Ivan Volobuev",
+  "license": "ISC",
+  "homepage": "https://github.com/IvanVA13/goit-js-hw-",
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-nuke-dist": "^1.0.1",
+    "sass": "^1.32.12"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.0",
+    "gh-pages": "^3.1.0"
+  }
+}
